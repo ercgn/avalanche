@@ -1,0 +1,17 @@
+Term Project Storyboard:
+
+The load screen will contain a Start menu with a “Play!” button, an “Instructions!” button, a “Stats!” button, and a “Credits!” button. The interface will be kept nice and simple to mirror the simplicity of the actual “Avalanche” game. 
+
+The “Play!” button, as you can probably gleam, launches the actual game. You will be playing as a small white block (at least initially) and your goal is to try to climb as high as you can without getting smashed or drowned by the blue waters.  This game will feature three kinds of blocks: small, medium, and large. Each block will be labeled “Wahoo!” and the overall layout of the board will have a “Carpe Diem!” theme. To complete this theme, the blue water will most probably have words containing negative discouraging comments that will be floating inside. So the objective is to avoid being smashed by positive blocks and being drowned by negativity!
+
+The “Instructions!” section will just simply explain the gameplay.
+
+The “Credits!” page will simply just give credits to everyone who helped me with the project! 
+
+The main problem I need to conquer is how to do collision detection for four different cases. The second problem I need to figure out is how to make my player jump and also be able to detect side walls so I can implement wall jumping. Lastly, I need to have each individual object recognize other objects so that they collide with each other. 
+
+I had researched pygame and found that given the time constraints I had, learning a new module was impossible. Therefore, I just decided to simply use Tkinter and events. However, I have used pygame to implement music and sound!
+
+Other than that, the game is simply run on Tkinter. There is a block-falling algorithm (which falls randomly… almost), but it's an algorithm that checks for the block of the highest height and then places a new block (randomly) based on that. Thus, blocks never collide with each other! 
+
+There are different types of collision detection: top, bottom, and sideways. Collision from the top (as in landing) just sets the player on the top of a block. Collision on the bottom causes the player to simply bump into the block. Collision sideways just prevents a player from moving inside a block. 
